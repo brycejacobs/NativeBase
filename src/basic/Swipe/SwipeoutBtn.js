@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
 
@@ -77,7 +78,7 @@ class SwipeoutBtn extends Component {
 
 SwipeoutBtn.propTypes = {
   ...Text.propTypes,
-  style: React.PropTypes.object,
+  style: PropTypes.object,
 };
 
 const StyledSwipeoutBtn = connectStyle('NativeBase.SwipeoutBtn', {}, mapPropsToStyleNames)(SwipeoutBtn);

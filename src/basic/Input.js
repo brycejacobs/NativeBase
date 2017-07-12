@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { TextInput } from "react-native";
 import { connectStyle } from "native-base-shoutem-theme";
@@ -28,7 +29,7 @@ class Input extends NativeBaseComponent {
 
 Input.propTypes = {
   ...TextInput.propTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledInput = connectStyle("NativeBase.Input", {}, mapPropsToStyleNames)(

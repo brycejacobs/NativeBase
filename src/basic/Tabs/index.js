@@ -1,5 +1,8 @@
+const PropTypes = require('prop-types');
 const React = require("react");
-const { PropTypes, Component } = React;
+const {
+  Component
+} = React;
 const ReactNative = require("react-native");
 const {
   Dimensions,

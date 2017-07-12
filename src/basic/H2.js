@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { Text } from "react-native";
 
@@ -23,7 +24,7 @@ const childrenType = function(props, propName, component) {
 H2.propTypes = {
   ...Text.propTypes,
   children: childrenType,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledH2 = connectStyle("NativeBase.H2", {}, mapPropsToStyleNames)(H2);

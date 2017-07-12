@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 import _ from "lodash";
@@ -12,7 +13,7 @@ class Footer extends Component {
 
 Footer.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledFooter = connectStyle(

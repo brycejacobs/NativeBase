@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import {
   View,
@@ -139,7 +140,7 @@ class ActionSheetContainer extends Component {
 
 ActionSheetContainer.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledActionSheetContainer = connectStyle(

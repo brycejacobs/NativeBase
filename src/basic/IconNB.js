@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 
 import { connectStyle } from "native-base-shoutem-theme";
@@ -16,7 +17,7 @@ import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
 
 class IconNB extends Component {
   static contextTypes = {
-    theme: React.PropTypes.object
+    theme: PropTypes.object
   };
 
   componentWillMount() {
@@ -64,7 +65,7 @@ class IconNB extends Component {
 }
 
 IconNB.propTypes = {
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledIconNB = connectStyle(

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { TouchableOpacity, View } from "react-native";
 
@@ -28,11 +29,11 @@ class CardItem extends Component {
 
 CardItem.propTypes = {
   ...TouchableOpacity.propTypes,
-  style: React.PropTypes.object,
-  header: React.PropTypes.bool,
-  cardBody: React.PropTypes.bool,
-  footer: React.PropTypes.bool,
-  button: React.PropTypes.bool
+  style: PropTypes.object,
+  header: PropTypes.bool,
+  cardBody: PropTypes.bool,
+  footer: PropTypes.bool,
+  button: PropTypes.bool
 };
 
 const StyledCardItem = connectStyle(

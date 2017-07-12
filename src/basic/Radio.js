@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { TouchableOpacity, Platform } from 'react-native';
 import { connectStyle } from 'native-base-shoutem-theme';
@@ -8,7 +9,7 @@ import computeProps from '../Utils/computeProps';
 
 class Radio extends Component {
   static contextTypes = {
-    theme: React.PropTypes.object,
+    theme: PropTypes.object,
   }
   prepareRootProps() {
     const defaultProps = {
@@ -54,8 +55,8 @@ class Radio extends Component {
 
 Radio.propTypes = {
   ...TouchableOpacity.propTypes,
-  selected: React.PropTypes.bool,
-  standardStyle: React.PropTypes.bool
+  selected: PropTypes.bool,
+  standardStyle: PropTypes.bool
 };
 
 const StyledRadio = connectStyle('NativeBase.Radio', {}, mapPropsToStyleNames)(Radio);

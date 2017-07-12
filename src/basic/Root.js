@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 
@@ -30,7 +31,7 @@ class Root extends Component {
 
 Root.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledRoot = connectStyle("NativeBase.Root", {}, mapPropsToStyleNames)(

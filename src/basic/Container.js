@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 
@@ -23,7 +24,7 @@ class Container extends Component {
 
 Container.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledContainer = connectStyle(

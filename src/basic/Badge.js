@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 
@@ -17,7 +18,7 @@ class Badge extends Component {
 
 Badge.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledBadge = connectStyle("NativeBase.Badge", {}, mapPropsToStyleNames)(

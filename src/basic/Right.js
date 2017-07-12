@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 
@@ -12,7 +13,7 @@ class Right extends Component {
 
 Right.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledRight = connectStyle("NativeBase.Right", {}, mapPropsToStyleNames)(

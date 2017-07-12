@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { Text } from "react-native";
 import { connectStyle } from "native-base-shoutem-theme";
@@ -13,7 +14,7 @@ class Title extends Component {
 
 Title.propTypes = {
   ...Text.propTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledTitle = connectStyle("NativeBase.Title", {}, mapPropsToStyleNames)(

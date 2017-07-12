@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { Text } from "react-native";
 
@@ -12,7 +13,7 @@ class Label extends Component {
 
 Label.propTypes = {
   ...Text.propTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledLabel = connectStyle("NativeBase.Label", {}, mapPropsToStyleNames)(

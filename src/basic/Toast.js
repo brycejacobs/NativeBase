@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
 import { View, ViewPropTypes } from "react-native";
 import { connectStyle } from "native-base-shoutem-theme";
@@ -11,7 +12,7 @@ class Toast extends Component {
 
 Toast.propTypes = {
   ...ViewPropTypes,
-  style: React.PropTypes.object
+  style: PropTypes.object
 };
 
 const StyledToast = connectStyle("NativeBase.Toast", {}, mapPropsToStyleNames)(
