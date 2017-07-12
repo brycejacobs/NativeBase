@@ -12,7 +12,10 @@ var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++)
 
 
 
-var _lodash=require("lodash");var _lodash2=_interopRequireDefault(_lodash);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var React=require("react");var PropTypes=React.PropTypes,Component=React.Component;var ReactNative=require("react-native");var Dimensions=ReactNative.Dimensions,View=ReactNative.View,Animated=ReactNative.Animated,ScrollView=ReactNative.ScrollView,StyleSheet=ReactNative.StyleSheet,InteractionManager=ReactNative.InteractionManager,Platform=ReactNative.Platform,ViewPropTypes=ReactNative.ViewPropTypes;var TimerMixin=require("react-timer-mixin");
+
+
+
+var _lodash=require("lodash");var _lodash2=_interopRequireDefault(_lodash);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var PropTypes=require('prop-types');var React=require("react");var Component=React.Component;var ReactNative=require("react-native");var Dimensions=ReactNative.Dimensions,View=ReactNative.View,Animated=ReactNative.Animated,ScrollView=ReactNative.ScrollView,StyleSheet=ReactNative.StyleSheet,InteractionManager=ReactNative.InteractionManager,Platform=ReactNative.Platform,ViewPropTypes=ReactNative.ViewPropTypes;var TimerMixin=require("react-timer-mixin");
 
 var SceneComponent=require("./SceneComponent");var _require=
 require("./DefaultTabBar"),DefaultTabBar=_require.DefaultTabBar;var _require2=
@@ -115,7 +118,7 @@ return null;
 }else if(this.props.renderTabBar){
 return React.cloneElement(this.props.renderTabBar(props),props);
 }else{
-return React.createElement(DefaultTabBar,_extends({},props,{__source:{fileName:_jsxFileName,lineNumber:118}}));
+return React.createElement(DefaultTabBar,_extends({},props,{__source:{fileName:_jsxFileName,lineNumber:121}}));
 }
 },
 
@@ -192,7 +195,7 @@ scrollEnabled:!this.props.locked,
 directionalLockEnabled:true,
 alwaysBounceVertical:false,
 keyboardDismissMode:"on-drag"},
-this.props.contentProps,{__source:{fileName:_jsxFileName,lineNumber:172}}),
+this.props.contentProps,{__source:{fileName:_jsxFileName,lineNumber:175}}),
 
 scenes));
 
@@ -209,11 +212,11 @@ shouldUpdated:_this4._shouldRenderSceneKey(
 idx,
 _this4.state.currentPage),
 
-style:{width:_this4.state.containerWidth},__source:{fileName:_jsxFileName,lineNumber:206}},
+style:{width:_this4.state.containerWidth},__source:{fileName:_jsxFileName,lineNumber:209}},
 
 _this4._keyExists(_this4.state.sceneKeys,key)?
 child:
-React.createElement(View,{heading:child.props.heading,__source:{fileName:_jsxFileName,lineNumber:216}})));
+React.createElement(View,{heading:child.props.heading,__source:{fileName:_jsxFileName,lineNumber:219}})));
 
 
 });
@@ -316,7 +319,7 @@ this.props.tabBarPosition==="overlayTop"?"top":"bottom",0);
 return(
 React.createElement(View,{
 style:[styles.container,this.props.style],
-onLayout:this._handleLayout,__source:{fileName:_jsxFileName,lineNumber:317}},
+onLayout:this._handleLayout,__source:{fileName:_jsxFileName,lineNumber:320}},
 
 this.props.tabBarPosition==="top"&&this.renderTabBar(tabBarProps),
 this.renderScrollableContent(),
